@@ -71,6 +71,7 @@ function EditUserForm({ id, getUpdateProfile, usuarioConectado, getProfile }) {
             value={user.identification}
             onChange={handleInputChange}
             required
+            readonly
           />
           <input
             class="form-control"
@@ -91,6 +92,7 @@ function EditUserForm({ id, getUpdateProfile, usuarioConectado, getProfile }) {
             value={user.birthDate}
             onChange={handleInputChange}
             required
+            readonly
           />
           <input
             class="form-control"

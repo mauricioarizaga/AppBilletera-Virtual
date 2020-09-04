@@ -1,0 +1,53 @@
+#onewalletcont {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}
+
+#onewalletrow {
+  width: 70%;
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.walletcol {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-style: solid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.walletcol h5 {
+  font-size: 100%;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 420px) {
+  #onewalletcont {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #onewalletrow {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .walletcol {
+    width: 100%;
+    height: 60px;
+    border-style: solid;
+  }
+  .walletcol h5 {
+    font-size: 80%;
+    font-weight: 700;
+  }
+}

@@ -1,116 +1,64 @@
-#root{
-    margin-top: 0!important;
+/* Container Wallet */
+#walletcont {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(53, 53, 53), rgb(255, 255, 255));
 }
-#wallet{
-    position: relative;
-    width: 70%;
+/* Boton goback */
+.goback {
+  width: 40%;
+  height: 80%;
+  margin-top: 10%;
+  align-self: center;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px rgb(73, 70, 70);
+  background-color: rgb(228, 253, 0);
+  border-color: transparent !important;
+}
+.goback:hover {
+  background-color: rgb(167, 167, 167) !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+@media only screen and (max-width: 415px) {
+  /* Container Wallet */
+  #walletcont {
     display: flex;
-    background: linear-gradient(
-        to bottom, 
-        rgba(255,242,0,1) 0%,
-        rgba(255,253,133,1) 37%,
-        rgb(235, 235, 235) 75%
-    );
-    border: solid 1px #acacac9c;
-}
-#wallet .row{
-    width: 95%;
-    margin: 0px auto;
-    padding: 0px;
-}
-#wallet .row > h2{
-    padding-left: 2%;
     width: 100%;
-}
-#wallet .item{
-    margin: 5px 0px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #e5f77f;
-    padding: 15px 0px;
-}
-#wallet .item:first-child{
-    margin-bottom: 35px;
-    background-color: #eeeeee;
-}
-#wallet .item .props{
-    width: 25%;
-    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(53, 53, 53), rgb(255, 255, 255));
+  }
+  #headerwallet {
+    width: 100%;
+    align-self: center;
+  }
+  .onewalletdiv {
+    width: 100%;
+    align-self: center;
     justify-content: center;
-    align-items: center;
-}
-
-#wallet .item div[class^="prop-"] h5{
-    margin-bottom: 0px;
-}
-#wallet button{
+  }
+  /* Boton goback */
+  .goback {
+    width: 40%;
+    height: 80%;
     margin-top: 10%;
-    margin-left: 16%;
-}
-
-@media only screen and (max-width: 415px){ 
-    #root {
-        margin: 0!important;
-    }
-   #wallet{
-    width: 100%;
-        display: flex;
-        background: transparent; 
-        border: none;
-        flex-direction: column;
-        margin: 0!important;
-
-    }
-#headerwallet {
-    width: 100%;
-    margin-top: 0!important;
-}
-    #wallet .row{
-        width: 100%;
-        margin: 0px auto;
-    }
-    #wallet .row > h2{
-        visibility: hidden;
-    }
-    #wallet .item{
-        align-items: center;
-        background-color: white;
-        flex-wrap: wrap;
-    }
-    #wallet .item .prop-1{
-        width: 50%;
-    }
-    #wallet .item .props{
-        width: 50%;
-    }
-    #wallet .item .props{
-        width: 50%;
-    }
-    #wallet .item .props{
-        width: 50%;
-    }
-    #gobackcont {
-        width: 100%;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-
-    }
-    #wallet .goback{
-        width: 60%;
-        align-self: center;
-        background-color: yellow;
-        color: #000;
-        border: none;
-        font-weight: bold;
-        font-size: 100%;
-        box-shadow: 5px 5px 5px rgb(167, 167, 167);
-        margin-top: 10% !important;
-        margin-right: 15%;
-    }
-    .goback:hover {
-        color: rgb(0, 0, 0);
-        box-shadow: none;
-        background-color: rgb(179, 179, 179) 8, 168, 168;
-    }
+    align-self: center;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgb(73, 70, 70);
+    background-color: rgb(228, 253, 0);
+    border-color: transparent !important;
+  }
+  .goback:hover {
+    background-color: rgb(167, 167, 167) !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
 }
