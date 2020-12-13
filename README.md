@@ -31,7 +31,7 @@ const { GOOGLE_API_KEY } = 'YOUR GOOGLE API KEY';
 Clonar el repositorio en la ubicación que elijas.
 
 ```bash
-git clone https://github.com/soyHenry/henry-bank-ft02.git
+git clone https://github.com/mauricioarizaga/AppBilletera-Virtual.git
 ```
 
 ## Instalación :computer:
